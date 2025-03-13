@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="contactStyle.css">
+    <script src="https://kit.fontawesome.com/d358b79af5.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainDiv">
+        <nav class="navigation">
+            <img src="img/logo.jpg" class="logo">
+            <div class="search">
+                <p>Search</p>
+            </div>
+            <div class="navList">
+                <a href="main.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="searchIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars" id="menuImg" onclick="openMenu()"></i>
+                <i class="fa-solid fa-x" style="display: none;" id="xImg" onclick="openMenu()"></i>
+            </div>
+        </nav>
+        <div class="menuDiv" id="menuDiv">
+            <a href="main.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="contactDiv">
+            <img src="img/salice.jpg">
+            <div class="column">
+                <p class="title">Get in touch</p>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dol</p>
+                <div>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-section">
+            <form action="#" method="post">
+                <label for="name">First name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+        
+                <label for="surname">Last name:</label>
+                <input type="text" id="surname" name="surname" placeholder="Surname" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        
+                <label for="phone">Phone number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 234 5678" required>
+        
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="msg" rows="5" required></textarea>
+        
+                <button type="submit">Submit</button>
+            </form>
+        
+          
+          </section>
+
+        <div class="footer">
+            <div class="row1">
+                <div>
+                    <img src="img/logoOld.jpg" class="logo">
+                </div>
+                <div class="mid">
+                    <a href="main.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                </div>
+            </div>
+            <div class="row2">
+                <p>2024 Your Website. All rights reserved.</p>
+                <p>Privacy Policyy</p>
+                <p>Terms of Service</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openMenu() {
+            if(document.getElementById('menuDiv').style.display == "none"){
+                document.getElementById('menuDiv').style.display = "flex";
+                document.getElementById('menuImg').style.display = "none";
+                document.getElementById('xImg').style.display = "inline";
+            }
+            else {
+                document.getElementById('menuDiv').style.display = "none";
+                document.getElementById('menuImg').style.display = "inline";
+                document.getElementById('xImg').style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
